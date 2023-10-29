@@ -143,7 +143,7 @@ span {
   font-size: 3rem;
   color: red;
 }
-.promotion1 .text_promo button {top: 7vh;}
+.promotion1 .text_promo button {top: 8vh;}
 .promotion2 img {height: 25vh; border-radius: 0.5rem; margin: auto 0;}
 .promotion2 {
   border: 2px solid white;
@@ -160,7 +160,7 @@ span {
   0.9px 0px 38.2px rgba(0, 0, 0, 0.189),
   2px 0px 80px rgba(0, 0, 0, 0.3);
 }
-.promotion2 .text_promo button {top: 5vh;}
+.promotion2 .text_promo button {top: 7vh;}
 .css-button-sliding-to-left--black {
   min-width: 6vw;
   height: 4vh;
@@ -196,3 +196,9 @@ span {
   height: 100%;
   background: #212529;
 }
+.subscripton_container {
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+}
+.subscripton_container h2 {color: red; font-size: 2rem;}
