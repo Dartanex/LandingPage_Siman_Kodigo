@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pixelify+Sans:wght@500&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pixelify+Sans:wght@500&family=Playpen+Sans&family=Tilt+Neon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container_header {
+    display: flex;
+    justify-content: space-between;  
+}
+.glass {
+    background-color: white;
+    height: 55vh;
+    width: 80vw;
+    margin: 2% 10% 0 10%;
+    border-radius: 2rem;
+    background: -webkit-linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+}
+.content_header{
+    text-align: center;
+    padding-left: 4%;
+    font-family: 'Tilt Neon', sans-serif;
+}
+.logo_header {
+    width: 20vw; 
+}
+.title_header { font-size: 3.5rem; color: #EB5757;}
+.title_descuento { font-size:4rem; color: red;}
+.form-subscripcion  { margin: 0 10% 0 10%;}
+.form-subscripcion label {display: block;}
+.form-subscripcion input {
+    width: 40%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: 1px solid red;
+}
+.css-button-sliding-to-bottom--red {
+    min-width: 15rem;
+    height: 3rem;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #d90429;
+    color: #d90429;
+  }
+  .css-button-sliding-to-bottom--red:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-bottom--red:hover:after {
+    height: 100%;
+  }
+  .css-button-sliding-to-bottom--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #d90429;
+  }
+.atraction_img {border-radius: 0 2rem 2rem 0;}
