@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 body {
-    background: #EB5757;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right bottom, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 /*Modificando el header*/
 /*colocamos el display en modo fexible y se envian a los laterales el div class container_header y la imagen atraction_img*/
@@ -22,9 +24,9 @@ body {
     height: 55vh;
     width: 80vw;
     margin: 2% 10% 0 10%;
-    border-radius: 2rem;
-    background: -webkit-linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-    background: linear-gradient(to right top, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    border-radius: 2rem 2rem 0 0;
+    background: -webkit-linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
 }
 .content_header{
     text-align: center;
@@ -34,20 +36,21 @@ body {
 .logo_header {
     width: 20vw; 
 }
-.title_header { font-size: 3.5rem; color: #EB5757;}
-.title_descuento { font-size:4rem; color: red;}
+.title_header { font-size: 2.5rem; color: #EB5757;}
+.title_descuento { font-size:3.5rem; color: red;}
 .form-subscripcion  { margin: 0 10% 0 10%;}
 .form-subscripcion label {display: block;}
 .form-subscripcion input {
-    width: 40%;
+    width: 50%;
     padding: 1%;
-    margin: 1%;
+    margin: 1% auto 2% auto;
     border-radius: 5px;
     font-size: 1.3rem;
-    border: 1px solid red;
+    border: 2px solid red;
+    display: block;
 }
 .css-button-sliding-to-bottom--red { /*Configuacion de la animacion del boton*/
-    min-width: 15rem;
+    min-width: 50%;
     height: 3rem;
     color: #fff;
     padding: 5px 10px;
@@ -82,6 +85,32 @@ body {
     width: 100%;
     background: #d90429;
   }
-.atraction_img {border-radius: 0 2rem 2rem 0;}
+.atraction_img {border-radius: 0 2rem 0 0;}
 .nevershare_header {padding: 1%;}
 .restriction {padding: 1%; color: gray;}
+/*Efecto glass para contenedor main*/
+.glas_1 {
+  background-color: white;
+    height: 100vh;
+    width: 80vw;
+    margin: 0 10% 0 10%;
+    border-radius: 0 0 2rem 2rem;
+    background: -webkit-linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+    background: linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+}
+.benefits {
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+  background-color: gray;
+  background: -webkit-linear-gradient(to bottom, rgba(160, 157, 157, 0.6), rgba(160, 157, 157,0.4));
+  background: linear-gradient(to bottom, rgba(160, 157, 157, 0.6), rgba(160, 157, 157,0.4));
+}
+.benefits img {height: 10vh; width: auto; display: block;margin: 0 auto 0 auto;}
+.benefits h3 {text-align: center;padding: 2%;}
+.promotions {
+  width: 100%;
+}
+.promotions img {height: 10vh;}
