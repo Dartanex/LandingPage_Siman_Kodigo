@@ -202,3 +202,29 @@ span {
   border-radius: 0.5rem;
 }
 .subscripton_container h2 {color: red; font-size: 2rem;}
+.glass2 {
+  background-color: white;
+  height: 50vh;
+  width: 80vw;
+  margin: 2% 10% 1% 10%;
+  border-radius: 2rem;
+  background: -webkit-linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  background: linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+}
+footer {font-family: 'Lato', sans-serif;}
+.logo_footer {height: 5vh; width: auto; margin: 2%; border-radius: 1rem;}
+.option_container {display: flex; text-align: left;justify-content: space-around;}
+footer ul {
+  list-style-type: none;
+}
+.firsttitle {font-size: 1.3rem;}
+footer ul li {margin: 2%;}
+footer ul li a {text-decoration: none; color: black;}
+footer ul li a:hover {color: #d90429; transition: all 0.3s ease;}
+.social_media h5 {font-size: 0.8rem;}
+.social_media ul {display: flex; justify-content: space-around;align-items: center;}
+.social_media img {height: 3vh; width: auto;}
+.payment_secure {margin: 2% auto; display: block;}
+.payment_methos {display: flex; align-items: center; justify-content: center; gap: 2%; margin-bottom: 5%;}
+.payment_methos img {height: 2vh; width: auto;}
+footer p {text-align: center;}
