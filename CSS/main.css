@@ -229,7 +229,7 @@ footer ul li a:hover {color: #d90429; transition: all 0.3s ease;}
 footer p {text-align: center;}
 
 /*Media queries para moviles*/
-@media only screen and (max-width: 524px) {
+@media screen and (max-width: 768px) {
   body {
     background-repeat: no-repeat;
   }
@@ -271,4 +271,48 @@ footer p {text-align: center;}
   .social_media ul {justify-content: center; gap: 3vw;}
   .social_media img {width: 5vh; height: auto;}
   footer p {font-size: 0.5rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
+}
+/*Media queries para tablets*/
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+  body {
+    background-repeat: no-repeat;
+  }
+  /*Configurando todo el header*/
+  
+  .glass {width: 80%; height: auto;}
+  .title_header { font-size: 2rem;}
+  .title_descuento { font-size:2.5rem;}
+  .form-subscripcion input {width: 50%; height: auto; font-size: 1rem;}
+  
+  /*Configurando todo el main*/
+  .content_container {width: 80%; height: auto;}
+  .glas_1 {width: 80%; height:auto;}
+  .benefits {
+    
+    height: auto; width:100%;
+  }
+  .benefits img {height: 8vh; width: auto;}
+  .benefits h3 {font-size: 1rem;}
+  .promotions {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .promotion1 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center; gap: 20vw;}
+  .promotion1 img {height: 30vh; width: auto;}
+  .css-button-sliding-to-bottom--red {top: 50%;}
+  .promotion2 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center; gap: 5vw;}
+  .promotion2 .css-button-sliding-to-left--black {margin-top: 13%;}
+  .subscripton_container h2 {font-size: 2rem; width: 80%;margin-left: 10%;}
+  .subscripton_container h3 {font-size: 0.7rem; width:80%; margin-left: 10%;}
+  /*Configurando todo el footer*/
+  .glass2 {height: 80%; height: auto;}
+  .logo_footer {display: block; width: 15vh; height: auto; margin: 2% auto 5% auto; justify-content: center;}
+  .option_container {flex-flow: row wrap; justify-content: center;}
+  .social_media h5 {margin-top:2%;}
+  .social_media ul {justify-content: center; gap: 3vw;}
+  .social_media img {width: 5vh; height: auto;}
+  footer p {font-size: 0.7rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
 }
