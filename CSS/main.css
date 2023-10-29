@@ -10,10 +10,13 @@ body {
     background: -webkit-linear-gradient(to right bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right bottom, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/*Modificando el header*/
+/*colocamos el display en modo fexible y se envian a los laterales el div class container_header y la imagen atraction_img*/
 .container_header {
     display: flex;
     justify-content: space-between;  
 }
+/*Efecto glass*/
 .glass {
     background-color: white;
     height: 55vh;
@@ -43,7 +46,7 @@ body {
     font-size: 1.3rem;
     border: 1px solid red;
 }
-.css-button-sliding-to-bottom--red {
+.css-button-sliding-to-bottom--red { /*Configuacion de la animacion del boton*/
     min-width: 15rem;
     height: 3rem;
     color: #fff;
