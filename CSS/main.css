@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 body {
-    
     background: #ee0979;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -34,7 +33,8 @@ body {
     font-family: 'Tilt Neon', sans-serif;
 }
 .logo_header {
-    width: 20vw; 
+    width: 20vw;
+    border-radius: 1rem; 
 }
 .title_header { font-size: 2.5rem; color: #EB5757;}
 .title_descuento { font-size:3.5rem; color: red;}
@@ -136,14 +136,13 @@ body {
   0.5px 0px 17.9px rgba(0, 0, 0, 0.134),
   0.7px 0px 25.4px rgba(0, 0, 0, 0.155),
   0.9px 0px 38.2px rgba(0, 0, 0, 0.189),
-  2px 0px 80px rgba(0, 0, 0, 0.3)
-;
+  2px 0px 80px rgba(0, 0, 0, 0.3);
 }
 span {
   font-size: 3rem;
   color: red;
 }
-.promotion1 .text_promo button {top: 8vh;}
+.promotion1 .text_promo button {top: 7vh;}
 .promotion2 img {height: 25vh; border-radius: 0.5rem; margin: auto 0;}
 .promotion2 {
   border: 2px solid white;
@@ -160,7 +159,7 @@ span {
   0.9px 0px 38.2px rgba(0, 0, 0, 0.189),
   2px 0px 80px rgba(0, 0, 0, 0.3);
 }
-.promotion2 .text_promo button {top: 7vh;}
+.promotion2 .text_promo button {top: 1vh;}
 .css-button-sliding-to-left--black {
   min-width: 6vw;
   height: 4vh;
@@ -228,3 +227,48 @@ footer ul li a:hover {color: #d90429; transition: all 0.3s ease;}
 .payment_methos {display: flex; align-items: center; justify-content: center; gap: 2%; margin-bottom: 2%;}
 .payment_methos img {height: 2vh; width: auto;}
 footer p {text-align: center;}
+
+/*Media queries para moviles*/
+@media only screen and (max-width: 524px) {
+  body {
+    background-repeat: no-repeat;
+  }
+  /*Configurando todo el header*/
+  .container_header {flex-flow: row wrap; justify-content: center;}
+  .glass {width: 80%; height: auto;}
+  .title_header { font-size: 1rem;}
+  .title_descuento { font-size:1.5rem;}
+  .form-subscripcion input {width: 90%; height: auto; font-size: 1rem;}
+  .atraction_img {margin: 1% auto; border-radius: 1rem;width: 80%; height: auto;}
+  /*Configurando todo el main*/
+  .content_container {width: 80%; height: auto;}
+  .glas_1 {width: 80%; height:auto;}
+  .benefits {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    height: auto; width:100%;
+  }
+  .benefits img {height: 5vh; width: auto;}
+  .benefits h3 {font-size: 1rem;}
+  .promotions {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .promotion1 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center;}
+  .promotion1 img {height: 20vh; width: auto;}
+  .css-button-sliding-to-bottom--red {top: 50%;}
+  .promotion2 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center;}
+  .subscripton_container h2 {font-size: 1.5rem; width: 80%;margin-left: 10%;}
+  .subscripton_container h3 {font-size: 0.7rem; width:80%; margin-left: 10%;}
+  /*Configurando todo el footer*/
+  .glass2 {height: 80%; height: auto;}
+  .logo_footer {display: block; width: 15vh; height: auto; margin: 2% auto 5% auto; justify-content: center;}
+  .option_container {flex-flow: row wrap; justify-content: center;}
+  .social_media h5 {margin-top:2%;}
+  .social_media ul {justify-content: center; gap: 3vw;}
+  .social_media img {width: 5vh; height: auto;}
+  footer p {font-size: 0.5rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
+}
