@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pixelify+Sans:wght@500&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pixelify+Sans:wght@500&family=Playpen+Sans&family=Tilt+Neon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*Modificando el header*/
+/*colocamos el display en modo fexible y se envian a los laterales el div class container_header y la imagen atraction_img*/
+.container_header {
+    display: flex;
+    justify-content: space-between;  
+}
+/*Efecto glass*/
+.glass {
+    background-color: white;
+    height: 55vh;
+    width: 80vw;
+    margin: 2% 10% 0 10%;
+    border-radius: 2rem 2rem 0 0;
+    background: -webkit-linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+}
+.content_header{
+    text-align: center;
+    padding-left: 4%;
+    font-family: 'Tilt Neon', sans-serif;
+}
+.logo_header {
+    width: 20vw;
+    border-radius: 1rem; 
+}
+.title_header { font-size: 2.5rem; color: #EB5757;}
+.title_descuento { font-size:3.5rem; color: red;}
+.form-subscripcion  { margin: 0 10% 0 10%;}
+.form-subscripcion label {display: block;}
+.form-subscripcion input {
+    width: 50%;
+    padding: 1%;
+    margin: 1% auto 2% auto;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: 2px solid red;
+    display: block;
+}
+.css-button-sliding-to-bottom--red { /*Configuacion de la animacion del boton*/
+    min-width: 50%;
+    height: 3rem;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #d90429;
+    color: #d90429;
+  }
+  .css-button-sliding-to-bottom--red:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-bottom--red:hover:after {
+    height: 100%;
+  }
+  .css-button-sliding-to-bottom--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background: #d90429;
+  }
+.atraction_img {border-radius: 0 2rem 0 0;}
+.nevershare_header {padding: 1%;}
+.restriction {padding: 1%; color: gray;}
+/*Agregando estilo a contenedor main*/
+.content_container {
+  font-family: 'Playpen Sans', cursive;
+}
+/*Efecto glass para contenedor main*/
+.glas_1 {
+  background-color: white;
+    height: 100vh;
+    width: 80vw;
+    margin: 0 10% 0 10%;
+    border-radius: 0 0 2rem 2rem;
+    background: -webkit-linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+    background: linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+}
+.benefits {
+  width: 100%;
+  height: 23vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+  background-color: gray;
+  background: -webkit-linear-gradient(to bottom, rgba(224, 222, 222, 0.6), rgba(224, 222, 222,0.4));
+  background: linear-gradient(to bottom, rgba(224, 222, 222, 0.6), rgba(224, 222, 222,0.4));
+}
+.benefits img {height: 10vh; width: auto; display: block;margin: 0 auto 0 auto;}
+.benefits h3 {text-align: center;padding: 2%;}
+.promotions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row: 1fr;
+  padding: 2% 2% 2% 2%;
+  gap: 1vw;
+}
+.promotion1 img {height: 30vh; border-radius: 2rem; }
+.promotion1 {
+  border: 2px solid white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+  background-color: rgba(253, 251, 251, 0.8);
+  box-shadow:
+  0.2px 0px 6.5px rgba(0, 0, 0, 0.085),
+  0.4px 0px 12.1px rgba(0, 0, 0, 0.114),
+  0.5px 0px 17.9px rgba(0, 0, 0, 0.134),
+  0.7px 0px 25.4px rgba(0, 0, 0, 0.155),
+  0.9px 0px 38.2px rgba(0, 0, 0, 0.189),
+  2px 0px 80px rgba(0, 0, 0, 0.3);
+}
+span {
+  font-size: 3rem;
+  color: red;
+}
+.promotion1 .text_promo button {top: 7vh;}
+.promotion2 img {height: 25vh; border-radius: 0.5rem; margin: auto 0;}
+.promotion2 {
+  border: 2px solid white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(253, 251, 251, 0.8);
+  padding-left: 1%;
+  box-shadow:
+  0.2px 0px 6.5px rgba(0, 0, 0, 0.085),
+  0.4px 0px 12.1px rgba(0, 0, 0, 0.114),
+  0.5px 0px 17.9px rgba(0, 0, 0, 0.134),
+  0.7px 0px 25.4px rgba(0, 0, 0, 0.155),
+  0.9px 0px 38.2px rgba(0, 0, 0, 0.189),
+  2px 0px 80px rgba(0, 0, 0, 0.3);
+}
+.promotion2 .text_promo button {top: 1vh;}
+.css-button-sliding-to-left--black {
+  min-width: 6vw;
+  height: 4vh;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #212529;
+  color: #212529;
+}
+.css-button-sliding-to-left--black:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--black:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--black:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #212529;
+}
+.subscripton_container {
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.5rem;
+}
+.subscripton_container h2 {color: red; font-size: 2rem;}
+.glass2 {
+  background-color: white;
+  height: 50vh;
+  width: 80vw;
+  margin: 2% 10% 1% 10%;
+  border-radius: 2rem;
+  background: -webkit-linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  background: linear-gradient(to right top, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+}
+footer {font-family: 'Lato', sans-serif;}
+.logo_footer {height: 5vh; width: auto; margin: 2%; border-radius: 1rem;}
+.option_container {display: flex; text-align: left;justify-content: space-around;}
+footer ul {
+  list-style-type: none;
+}
+.firsttitle {font-size: 1.3rem;}
+footer ul li {margin: 1%;}
+footer ul li a {text-decoration: none; color: black;}
+footer ul li a:hover {color: #d90429; transition: all 0.3s ease;}
+.social_media h5 {font-size: 0.8rem;}
+.social_media ul {display: flex; justify-content: space-evenly;align-items: center;}
+.social_media img {height: 3vh; width: auto;}
+.payment_secure {margin: 2% auto; display: block;}
+.payment_methos {display: flex; align-items: center; justify-content: center; gap: 2%; margin-bottom: 2%;}
+.payment_methos img {height: 2vh; width: auto;}
+footer p {text-align: center;}
+
+/*Media queries para moviles*/
+@media screen and (max-width: 768px) {
+  body {
+    background-repeat: no-repeat;
+  }
+  /*Configurando todo el header*/
+  .container_header {flex-flow: row wrap; justify-content: center;}
+  .glass {width: 80%; height: auto;}
+  .title_header { font-size: 1rem;}
+  .title_descuento { font-size:1.5rem;}
+  .form-subscripcion input {width: 90%; height: auto; font-size: 1rem;}
+  .atraction_img {margin: 1% auto; border-radius: 1rem;width: 80%; height: auto;}
+  /*Configurando todo el main*/
+  .content_container {width: 80%; height: auto;}
+  .glas_1 {width: 80%; height:auto;}
+  .benefits {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    height: auto; width:100%;
+  }
+  .benefits img {height: 5vh; width: auto;}
+  .benefits h3 {font-size: 1rem;}
+  .promotions {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .promotion1 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center;}
+  .promotion1 img {height: 20vh; width: auto;}
+  .css-button-sliding-to-bottom--red {top: 50%;}
+  .promotion2 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center;}
+  .subscripton_container h2 {font-size: 1.5rem; width: 80%;margin-left: 10%;}
+  .subscripton_container h3 {font-size: 0.7rem; width:80%; margin-left: 10%;}
+  /*Configurando todo el footer*/
+  .glass2 {height: 80%; height: auto;}
+  .logo_footer {display: block; width: 15vh; height: auto; margin: 2% auto 5% auto; justify-content: center;}
+  .option_container {flex-flow: row wrap; justify-content: center;}
+  .social_media h5 {margin-top:2%;}
+  .social_media ul {justify-content: center; gap: 3vw;}
+  .social_media img {width: 5vh; height: auto;}
+  footer p {font-size: 0.5rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
+}
+/*Media queries para tablets*/
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+  body {
+    background-repeat: no-repeat;
+  }
+  /*Configurando todo el header*/
+  
+  .glass {width: 80%; height: auto;}
+  .title_header { font-size: 2rem;}
+  .title_descuento { font-size:2.5rem;}
+  .form-subscripcion input {width: 50%; height: auto; font-size: 1rem;}
+  
+  /*Configurando todo el main*/
+  .content_container {width: 80%; height: auto;}
+  .glas_1 {width: 80%; height:auto;}
+  .benefits {
+    
+    height: auto; width:100%;
+  }
+  .benefits img {height: 8vh; width: auto;}
+  .benefits h3 {font-size: 1rem;}
+  .promotions {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .promotion1 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center; gap: 20vw;}
+  .promotion1 img {height: 30vh; width: auto;}
+  .css-button-sliding-to-bottom--red {top: 50%;}
+  .promotion2 {flex-flow: row wrap;  width: 90%; height: auto; box-shadow: none; justify-content: center; gap: 5vw;}
+  .promotion2 .css-button-sliding-to-left--black {margin-top: 13%;}
+  .subscripton_container h2 {font-size: 2rem; width: 80%;margin-left: 10%;}
+  .subscripton_container h3 {font-size: 0.7rem; width:80%; margin-left: 10%;}
+  /*Configurando todo el footer*/
+  .glass2 {height: 80%; height: auto;}
+  .logo_footer {display: block; width: 15vh; height: auto; margin: 2% auto 5% auto; justify-content: center;}
+  .option_container {flex-flow: row wrap; justify-content: center;}
+  .social_media {margin-left: 2vh;}
+  .social_media h5 {margin-top:2%;}
+  .social_media ul {justify-content: center; gap:3vw;}
+  .social_media img {width: 5vh; height: auto;}
+  footer p {font-size: 0.7rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
+}
+/*---Style for promotions.html---*/
+menu {width: 80ch; height: auto;}
+.navbar-brand {width: 10%; height: auto;}
+.navbar-brand img {width: 100%; height: auto;}
+.navbar-nav a:hover {color: red;}
