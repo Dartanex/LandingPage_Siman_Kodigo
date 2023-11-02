@@ -317,3 +317,8 @@ footer p {text-align: center;}
   .social_media img {width: 5vh; height: auto;}
   footer p {font-size: 0.7rem; text-align: center; width: 80%; height: auto; margin-left: 10%;}
 }
+/*---Style for promotions.html---*/
+menu {width: 80ch; height: auto;}
+.navbar-brand {width: 10%; height: auto;}
+.navbar-brand img {width: 100%; height: auto;}
+.navbar-nav a:hover {color: red;}
